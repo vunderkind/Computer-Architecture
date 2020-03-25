@@ -7,5 +7,7 @@ from cpu import *
 
 cpu = CPU()
 
-cpu.load()
+# print("This is the name of the program: ", sys.argv[0])
+# print('ARGUMENTS: ', str(sys.argv))
+cpu.load(sys.argv[1])
 cpu.run()
