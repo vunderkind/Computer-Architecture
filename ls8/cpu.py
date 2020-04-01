@@ -50,7 +50,6 @@ class CPU:
                 '0') or line.startswith('1')]
             program = [int(line[:8], 2) for line in lines]
 
-
         # program = [
         #     # From print8.ls8
         #     0b10000010, # LDI R0,8

@@ -7,7 +7,13 @@ from cpu import *
 
 cpu = CPU()
 
-# print("This is the name of the program: ", sys.argv[0])
-# print('ARGUMENTS: ', str(sys.argv))
+try:
+    if sys.argv[2] == "debug":
+        debug = True
+    else:
+        debug = False
+except:
+    debug = False
+
 cpu.load(sys.argv[1])
-cpu.run()
+cpu.run(debug=debug)
